@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Vite + React + TypeScript + TailwindCSS 五子棋游戏
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这个仓库包含了使用 Vite、React、TypeScript 和 TailwindCSS 构建的五子棋游戏。游戏规则简单：两名玩家轮流在棋盘上放置自己的棋子，第一个在横线、竖线或斜线上形成连续五个棋子的玩家获胜。
 
-Currently, two official plugins are available:
+## 特性
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 使用 Vite 快速构建和热重载
+- 使用 React 作为 UI 框架，通过组件化提高代码的可维护性
+- 使用 TypeScript 增加类型安全和更好的开发体验
+- 使用 TailwindCSS 进行快速样式开发
+- 支持两名玩家在同一设备上轮流对战
 
-## Expanding the ESLint configuration
+## 快速开始
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+确保你已经安装了 [Node.js](https://nodejs.org/)（推荐使用最新稳定版本）。
 
-- Configure the top-level `parserOptions` property like this:
+1. 克隆仓库：
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git git@github.com:qqqys163/gomoku.git
+cd gomoku
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. 安装依赖
+
+```bash
+npm install
+# 或者
+yarn
+```
+
+3. 启动服务器
+
+运行开发服务器，并在浏览器中打开 http://localhost:9999 查看项目
+
+```bash
+npm run dev
+# 或者
+yarn dev
+```
